@@ -6,88 +6,166 @@ const answerDisplay = document.querySelector('#answer')
 const questions = [
     {
        id: 0,
-       text: "Where are you hanging out this weekend?",
+       text: "Time to pledge your loyalties. Who are you taking Ticketmaster to court for?",
        answers: [
            {
-               text: "Abandoned alley",
-               image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-               alt: "Photo of the Empire State building during daytime",
-               credit: "Oliver Niblett"
+               text: "Taylor Swift",
+               image: "https://i.scdn.co/image/ab6761610000e5eb5a00969a4698c3132a15fbb0",
+               alt: "Singer Taylor Swift",
+               credit: "Spotify"
            },
            {
-               text: "Butterfly garden",
-               image: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-               alt:"Time-lapse photography car lights on bridge",
-               credit: "Carlos Alfonso"
+               text: "Kendrick Lamar",
+               image: "https://i.scdn.co/image/ab6761610000e5eb437b9e2a82505b3d93ff1022",
+               alt:"Singer Kendrick Lamar",
+               credit: "Spotify"
            },
            {
-               text: "Ye old saloon 🤠",
-               image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-               alt:"High-rise buildings",
-               credit: "Elena Kuchko"
+               text: "Rüfüs Du Sol",
+               image: "https://i.scdn.co/image/ab6761610000e5eba5d83556275bb22511f57624",
+               alt:"The band Rüfüs Du Sol",
+               credit: "Spotify"
            },
            {
-               text: "My room",
-               image: "https://images.unsplash.com/photo-1549965738-e1aaf1168943?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-               alt:"Road with people and house",
-               credit: "João Francisco"
-           }
+               text: "Luke Combs",
+               image: "https://i.scdn.co/image/ab6761610000e5eb3bf3adbf8f93255293523355",
+               alt:"Singer Luke Combs",
+               credit: "Spotify"
+           },
+           {
+                text: "Del Water Gap",
+                image: "https://i.scdn.co/image/ab6761610000e5eb8de628a55c6537a096e028e6",
+                alt:"Singer Del Water Gap",
+                credit: "Spotify"
+            },
+            {
+                text: "Fleetwood Mac",
+                image: "https://i.scdn.co/image/ab6761610000e5eb249d55f2d68a44637905c57e",
+                alt:"Gothic font in red reads, 'Fleetwood Mac' against white background",
+                credit: "Spotify"
+            }
        ]
     },
     {
         id: 1,
-        text: "What kind of music do you *tell* people you listen to?",
+        text: "Ok, but who have you actually listened to? (name five songs right now)",
         answers: [
             {
-                text: "",
-                image: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-                alt:"Pepperoni Pizza",
-                credit: "Alan Hardman"
+                text: "Electric Light Orchestra",
+                image: "https://i.scdn.co/image/ab6761610000e5eb3f289b61b4d965ce54e31841",
+                alt:"The band Electric Light Orchestra's signature image of a UFO",
+                credit: "Spotify"
             },
             {
-                text: "Pfft, anything but country",
-                image: "https://images.unsplash.com/photo-1481070414801-51fd732d7184?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-                alt:"ham sandwich on white surface",
-                credit: "Eaters Collective"
+                text: "Dustin Lynch",
+                image: "https://i.scdn.co/image/ab6761610000e5eb81cd620ab4e2adb53d83c5f9",
+                alt:"Singer Dustin Lynch",
+                credit: "Spotify"
             },
             {
-                text: "Tiktok hits only",
-                image: "https://images.unsplash.com/photo-1516100882582-96c3a05fe590?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-                alt:"Pasta in tomato sauce",
-                credit: "Mgg Vitchakorn"
+                text: "GRiZ",
+                image: "https://i.scdn.co/image/ab6761610000e5eb70fa7f3e6cb3df4c100fd43a",
+                alt:"Singer GRiZ",
+                credit: "Spotify"
             },
             {
-                text: "Country.",
-                image: "https://images.unsplash.com/photo-1516100882582-96c3a05fe590?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-                alt:"hamburger",
-                credit: "sk"
+                text: "Earl Sweatshirt",
+                image: "https://i.scdn.co/image/ab6761610000e5eb5e93db92ca7864585fbe5f28",
+                alt:"Singer Earl Sweatshirt",
+                credit: "Spotify"
+            },
+            {
+                text: "Japanese Breakfast",
+                image: "https://i.scdn.co/image/ab6761610000e5eb3a3fed0c7aa2276bedccc7fe",
+                alt:"Singer Japanese Breakfast",
+                credit: "Spotify"
+            },
+            {
+                text: "I don't know any of these",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Emblem-question-yellow.svg/240px-Emblem-question-yellow.svg.png",
+                alt:"A white question mark inside of a yellow circle with a dropshadow",
+                credit: "Creative Commons"
             }
         ]
     },
     {
         id: 2,
-        text: "What's your aesthetic inspiration?",
+        text: "Alright, your music taste seems... ok. But here's the real question: what's your cry-in-the-car album?",
         answers: [
             {
-                text: "Dads",
-                image: "https://images.unsplash.com/photo-1555040479-c949debe66c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-                alt:"focus photography of building windows",
-                credit: "Burgess Milner"
+                text: "Ascend - Illenium",
+                image: "https://i.scdn.co/image/ab67616d0000b273529c6fa82d23f65076c1579b",
+                alt:"Computer-genrated image of a flaming angel against a black background",
+                credit: "Spotify"
             },
             {
-                text: "y2k comebacks and low-rise jeans",
+                text: "Come Over When You're Sober - Lil Peep",
+                image: "https://i.scdn.co/image/ab67616d0000b27322278aa84691381f3015d534",
+                alt:"Singer Lil Peep lying across a bed next to a pink sneaker and pink stuffed rabbit",
+                credit: "Spotify"
+            },
+            {
+                text: "SOUR - Olivia Rodrigo",
+                image: "https://i.scdn.co/image/ab67616d0000b273a91c10fe9472d9bd89802e5a",
+                alt:"Singer Olivia Rodrigo sticking her tongue out with stickers all over her face",
+                credit: "Spotify"
+            },
+            {
+                text: "The Smiths - The Smiths",
+                image: "https://i.scdn.co/image/ab67616d0000b273a09b231129ab1cb1a6efc57f",
+                alt:"Purple filter over a black and white torso-up shot of a shirtless man looking down",
+                credit: "Spotify"
+            },
+            {
+                text: "American Heartbreak - Zach Bryan",
+                image: "https://i.scdn.co/image/ab67616d0000b273ba30859a1ca79c5a372d177a",
+                alt:"A blurred man runs across a field at sunset",
+                credit: "Spotify"
+            },
+            {
+                text: "Cigarettes After Sex - Cigarettes After Sex",
+                image: "https://i.scdn.co/image/ab67616d0000b2736b701428ed4c6e053902174a",
+                alt:"Cigarettes after sex written in all caps in white font against black background",
+                credit: "Spotify"
+            }
+        ]
+    },
+    {
+        id: 3,
+        text: "Let's do some crowdsourcing. How would your best friend describe your music taste?",
+        answers: [
+            {
+                text: "~alternative~",
+                image: "https://cdn.theatlantic.com/thumbor/eiecJzSaSSwQQPK0ygvlLCB1YSM=/0x396:2450x2846/1080x1080/media/img/2015/05/BOB_Cohen/original.jpg",
+                alt:"Cartoon drawing of a crowd at a concert from the perspective of the stage",
+                credit: "The Atlantic"
+            },
+            {
+                text: "classic",
                 image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"low angle view of building",
                 credit: "Brandon Giggs"
             },
             {
-                text: "Athleisure",
+                text: "headache-inducing",
                 image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"trees beside white house",
                 credit: "Phil Hearing"
             },
             {
-                text: "Patrick Bateman",
+                text: "basic",
+                image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"brown wooden cabin infront of forest",
+                credit: "eulauretta"
+            },
+            {
+                text: "valid",
+                image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"trees beside white house",
+                credit: "Phil Hearing"
+            },
+            {
+                text: "bad",
                 image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"brown wooden cabin infront of forest",
                 credit: "eulauretta"
@@ -95,29 +173,125 @@ const questions = [
         ]
     },
     {
-        id: 3,
-        text: "What's a song you deny liking but actually do?",
+        id: 4,
+        text: "Wow... that was pretty brutal. Would hate to hear what your bestie has to say about your style. So we'll hear from you... what's you're go-to shoe?",
         answers: [
             {
-                text: "Sweet Caroline",
-                image: "https://images.unsplash.com/photo-1555040479-c949debe66c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-                alt:"focus photography of building windows",
-                credit: "Burgess Milner"
+                text: "fila disruptors",
+                image: "https://cdn.theatlantic.com/thumbor/eiecJzSaSSwQQPK0ygvlLCB1YSM=/0x396:2450x2846/1080x1080/media/img/2015/05/BOB_Cohen/original.jpg",
+                alt:"Cartoon drawing of a crowd at a concert from the perspective of the stage",
+                credit: "The Atlantic"
             },
             {
-                text: "",
+                text: "vejas",
                 image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"low angle view of building",
                 credit: "Brandon Giggs"
             },
             {
-                text: "",
+                text: "af1",
                 image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"trees beside white house",
                 credit: "Phil Hearing"
             },
             {
-                text: "",
+                text: "tevas",
+                image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"brown wooden cabin infront of forest",
+                credit: "eulauretta"
+            },
+            {
+                text: "doc martens",
+                image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"trees beside white house",
+                credit: "Phil Hearing"
+            },
+            {
+                text: "cowboy boots",
+                image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"brown wooden cabin infront of forest",
+                credit: "eulauretta"
+            }
+        ]
+    },
+    {
+        id: 5,
+        text: "Interesting... and which phrase would you be caught saying?",
+        answers: [
+            {
+                text: "There's a snake in my boot!",
+                image: "https://cdn.theatlantic.com/thumbor/eiecJzSaSSwQQPK0ygvlLCB1YSM=/0x396:2450x2846/1080x1080/media/img/2015/05/BOB_Cohen/original.jpg",
+                alt:"Cartoon drawing of a crowd at a concert from the perspective of the stage",
+                credit: "The Atlantic"
+            },
+            {
+                text: "Have you met my friend Molly?",
+                image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"low angle view of building",
+                credit: "Brandon Giggs"
+            },
+            {
+                text: "Bro did you know Tame Impala is just one guy?",
+                image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"trees beside white house",
+                credit: "Phil Hearing"
+            },
+            {
+                text: "I heard it on TikTok first.",
+                image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"brown wooden cabin infront of forest",
+                credit: "eulauretta"
+            },
+            {
+                text: "Are you old enough to remember landlines?",
+                image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"trees beside white house",
+                credit: "Phil Hearing"
+            },
+            {
+                text: "No cap",
+                image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"brown wooden cabin infront of forest",
+                credit: "eulauretta"
+            }
+        ]
+    },
+    {
+        id: 6,
+        text: "We've just about got you down... last question. Who are your bestie goals?",
+        answers: [
+            {
+                text: "Mick Jagger and David Bowie",
+                image: "https://cdn.theatlantic.com/thumbor/eiecJzSaSSwQQPK0ygvlLCB1YSM=/0x396:2450x2846/1080x1080/media/img/2015/05/BOB_Cohen/original.jpg",
+                alt:"Cartoon drawing of a crowd at a concert from the perspective of the stage",
+                credit: "The Atlantic"
+            },
+            {
+                text: "Phoebe Bridgers, Lucy Dacus and Julien Baker",
+                image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"low angle view of building",
+                credit: "Brandon Giggs"
+            },
+            {
+                text: "Dolly Parton and Kenny Rogers",
+                image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"trees beside white house",
+                credit: "Phil Hearing"
+            },
+            {
+                text: "Two random girls who just met at a festival",
+                image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"brown wooden cabin infront of forest",
+                credit: "eulauretta"
+            },
+            {
+                text: "Bladee and Yung Lean",
+                image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"trees beside white house",
+                credit: "Phil Hearing"
+            },
+            {
+                text: "Doja Cat and Saweetie",
                 image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"brown wooden cabin infront of forest",
                 credit: "eulauretta"
