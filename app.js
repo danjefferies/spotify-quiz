@@ -12,6 +12,39 @@ const recs = {
     'rock': ['jangle pop', 'freakbeat', 'irish rebel song', 'anti-folk', 'souldies']
 }
 
+const playlists = {
+    'post-teen pop': '10FCW9lj0NdeoYI5VVvVtY', 
+    'neo mellow': '1u4LMI2YFyDRBtCJ00rbzm',
+    'indie poptimism': '7nHgmv7uyIA1KHj6qTttjH', 
+    'dream pop': '2A5zN7OTP4n64gEtsFEO2Z', 
+    'alt-z': '6TySxsLwRVYqEh7LZ6fyq8',
+    'country road': '4fj8PNbbwGXBWHKodGQhfD', 
+    'nl folk': '3yP7LJ0wT19xpeIJxJ7GJF', 
+    'mellow gold': '49vErWAk7BLsLccmRxngH3', 
+    'redneck': '2KWsDttfIMjLq1rpyxTQX8', 
+    'red dirt': '208eKWeHXifDir7qV5DQYB',
+    'brostep': '6dvgLyeXG3HLGqtMa8wAX0', 
+    'destroy techno': '6nv9bEOb9PlCvhHthMKfwo', 
+    'bubble trance': '6LJOGOAWRYLxDPGirVxTO3', 
+    'drift phonk': '19sgQqGAcGplazJZTXeLUG', 
+    're:techno': '3EBxpq1yqXbPgYmmnLyJxg',
+    'small room': '2rPwi4IFhoc2r1MMvY0ZI5',  
+    'lo-fi indie': '6bLWoiHrkb8pP82YGCqCHi', 
+    'shoegaze': '5ydNNBQbwQJuhmcxyo8K1f', 
+    'neo-pagan': '0BKvOUdbAVUjMDmQtJ0bk8', 
+    'baroque pop': '1e3sjciHZnhGYpaVYv6rO1',
+    'conscious hip hop': '3IU0ZFCSvKNqASPNsWoPuj', 
+    'experimental hip hop': '3bjbpsbl2mzaqFJcyQNGjE', 
+    'crunk': '2bfQBLvjoloMK1VoWFDimL', 
+    'drain': '1gdxF4FolxtfDph2f3jY12', 
+    'dark trap': '1lEZC1rWlusGF0IC6JxR5V',
+    'jangle pop': '31vdE2ocXKz1Zmd7jrUqWO', 
+    'freakbeat': '4XvaxZIdz8XNZqbckxbfYV', 
+    'irish rebel song': '4YTLyNGigTUxRK2VOKBGPM', 
+    'anti-folk': '1SXOzFKlMx7ODmxI1jnxux', 
+    'souldies': '0dOLyEu9HJ8tKGq70qVup9'
+}
+
 const questions = [
     {
        id: 0,
@@ -258,7 +291,7 @@ const questions = [
         text: "Interesting... and which phrase would you be caught saying?",
         answers: [
             {
-                text: "There's a snake in my boot!",
+                text: "Yeehaw!",
                 image: "https://cdn.theatlantic.com/thumbor/eiecJzSaSSwQQPK0ygvlLCB1YSM=/0x396:2450x2846/1080x1080/media/img/2015/05/BOB_Cohen/original.jpg",
                 alt:"Cartoon drawing of a crowd at a concert from the perspective of the stage",
                 credit: "The Atlantic",
@@ -484,7 +517,11 @@ const showAnswer = () => {
         }
     }
 
-    result = recs[maxKey][Math.floor(Math.random()*recs[maxKey].length)];
+    resultGenre = recs[maxKey][Math.floor(Math.random()*recs[maxKey].length)]
+    result = {
+        'genre': resultGenre,
+        'playlist': playlists[resultGenre]
+    };
 
     const answerBlock = document.createElement('div')
     answerBlock.classList.add('result-block')
@@ -492,15 +529,32 @@ const showAnswer = () => {
     remixButton.classList.add('remix-button')
     remixButton.textContent = 'Remix'
 
+    const answerIntro = document.createElement('h2')
+    answerIntro.textContent = 'The results are in! The super-cool ultra-niche Spotify genre you NEED to add to your playlists is...'
     const answerTitle = document.createElement('h3')
-    answerTitle.textContent = result
+    answerTitle.textContent = result.genre
+    const answerApology = document.createElement('h4')
+    answerApology.textContent = '(sorry)'
+    const moreInfo = document.createElement('h5')
+    moreInfo.innerHTML = "Click here to learn more about " + result.genre + "."
+    const playlistEmbed = document.createElement('div')
+    let playlistUrl = `https://open.spotify.com/embed/playlist/${result.playlist}?utm_source=generator`
+    //const playlistEmbed = document.write('<iframe style="border-radius:12px" src={`https://open.spotify.com/embed/playlist/${result.playlist}?utm_source=generator`} width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"/>')
+    playlistEmbed.innerHTML = '<iframe style="border-radius:12px" src=' + playlistUrl + 'width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"/>'
+    const remixText = document.createElement('h5')
+    console.log(`https://open.spotify.com/embed/playlist/${result.playlist}?utm_source=generator`)
+    remixText.textContent = "Don't like your rec? (The truth can be hard to hear) Hit remix to see another genre we think you'll like"
     // answerTitle.textContent = result.text
     console.log('answerTitle', answerTitle.textContent)
-    const answerImage = document.createElement('img')
+    // const answerImage = document.createElement('img')
 
     const handleButtonClick =  () => {
-        result = remixResult(maxKey, result)
-        answerTitle.textContent = result
+        result.genre = remixResult(maxKey, result.genre)
+        result.playlist = playlists[result.genre]
+        playlistUrl = `https://open.spotify.com/embed/playlist/${result.playlist}?utm_source=generator`
+        playlistEmbed.innerHTML = '<iframe style="border-radius:12px" src=' + playlistUrl + 'width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"/>'
+        moreInfo.innerHTML = "Click here to learn more about " + result.genre + "."
+        answerTitle.textContent = result.genre
     }
     remixButton.addEventListener('click', handleButtonClick)
     /*
@@ -508,7 +562,7 @@ const showAnswer = () => {
     answerImage.setAttribute('alt', result.alt)
     */
 
-    answerBlock.append(answerTitle, answerImage, remixButton)
+    answerBlock.append(answerIntro, answerTitle, answerApology, playlistEmbed, moreInfo, remixText, remixButton)
 
     answerDisplay.append(answerBlock)
 
