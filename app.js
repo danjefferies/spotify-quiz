@@ -450,6 +450,15 @@ const handleClick = (questionId, chosenAnswer) => {
     }
 }
 
+const remixResult = (genre, currentResult) => {
+    let newResult = currentResult
+    while(newResult === currentResult) {
+        newResult = recs[genre][Math.floor(Math.random()*recs[genre].length)];
+    }
+    console.log(newResult)
+    return newResult
+}
+
 const showAnswer = () => {
     let result;
     
@@ -479,17 +488,27 @@ const showAnswer = () => {
 
     const answerBlock = document.createElement('div')
     answerBlock.classList.add('result-block')
+    const remixButton = document.createElement('button')
+    remixButton.classList.add('remix-button')
+    remixButton.textContent = 'Remix'
+
     const answerTitle = document.createElement('h3')
     answerTitle.textContent = result
     // answerTitle.textContent = result.text
     console.log('answerTitle', answerTitle.textContent)
     const answerImage = document.createElement('img')
+
+    const handleButtonClick =  () => {
+        result = remixResult(maxKey, result)
+        answerTitle.textContent = result
+    }
+    remixButton.addEventListener('click', handleButtonClick)
     /*
     answerImage.setAttribute('src', result.image)
     answerImage.setAttribute('alt', result.alt)
     */
 
-    answerBlock.append(answerTitle, answerImage)
+    answerBlock.append(answerTitle, answerImage, remixButton)
 
     answerDisplay.append(answerBlock)
 
