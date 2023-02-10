@@ -536,24 +536,22 @@ const showAnswer = () => {
     const answerApology = document.createElement('h4')
     answerApology.textContent = '(sorry)'
     const moreInfo = document.createElement('h5')
-    moreInfo.innerHTML = "Click here to learn more about " + result.genre + "."
     const playlistEmbed = document.createElement('div')
     let playlistUrl = `https://open.spotify.com/embed/playlist/${result.playlist}?utm_source=generator`
-    //const playlistEmbed = document.write('<iframe style="border-radius:12px" src={`https://open.spotify.com/embed/playlist/${result.playlist}?utm_source=generator`} width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"/>')
+    let everyNoiseUrl = `https://everynoise.com/engenremap-${result.genre.replaceAll(/\W/g, '')}.html`
     playlistEmbed.innerHTML = '<iframe style="border-radius:12px" src=' + playlistUrl + 'width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"/>'
+    moreInfo.innerHTML = `Click <a href=${everyNoiseUrl} target=none>here</a> to learn more about ` + result.genre + "."
     const remixText = document.createElement('h5')
-    console.log(`https://open.spotify.com/embed/playlist/${result.playlist}?utm_source=generator`)
     remixText.textContent = "Don't like your rec? (The truth can be hard to hear) Hit remix to see another genre we think you'll like"
-    // answerTitle.textContent = result.text
     console.log('answerTitle', answerTitle.textContent)
-    // const answerImage = document.createElement('img')
 
     const handleButtonClick =  () => {
         result.genre = remixResult(maxKey, result.genre)
         result.playlist = playlists[result.genre]
         playlistUrl = `https://open.spotify.com/embed/playlist/${result.playlist}?utm_source=generator`
+        everyNoiseUrl = `https://everynoise.com/engenremap-${result.genre.replaceAll(/\W/g, '')}.html`
         playlistEmbed.innerHTML = '<iframe style="border-radius:12px" src=' + playlistUrl + 'width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"/>'
-        moreInfo.innerHTML = "Click here to learn more about " + result.genre + "."
+        moreInfo.innerHTML = `Click <a href=${everyNoiseUrl} target=none>here</a> to learn more about ` + result.genre + "."
         answerTitle.textContent = result.genre
     }
     remixButton.addEventListener('click', handleButtonClick)
