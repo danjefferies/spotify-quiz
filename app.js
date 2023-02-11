@@ -298,25 +298,18 @@ const questions = [
                 genre: "country"
             },
             {
-                text: "Have you met my friend Molly?",
-                image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-                alt:"low angle view of building",
-                credit: "Brandon Giggs",
-                genre: "edm"
+                text: "No cap",
+                image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"brown wooden cabin infront of forest",
+                credit: "eulauretta",
+                genre: "rap"
             },
             {
-                text: "Bro did you know Tame Impala is just one guy?",
+                text: "Bro, did you know Tame Impala is just one guy?",
                 image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"trees beside white house",
                 credit: "Phil Hearing",
                 genre: "indie"
-            },
-            {
-                text: "I heard it on TikTok first.",
-                image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-                alt:"brown wooden cabin infront of forest",
-                credit: "eulauretta",
-                genre: "pop"
             },
             {
                 text: "Are you old enough to remember landlines?",
@@ -326,11 +319,18 @@ const questions = [
                 genre: "rock"
             },
             {
-                text: "No cap",
+                text: "I heard it on TikTok first.",
                 image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"brown wooden cabin infront of forest",
                 credit: "eulauretta",
-                genre: "rap"
+                genre: "pop"
+            },
+            {
+                text: "Have you met my friend Molly?",
+                image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"low angle view of building",
+                credit: "Brandon Giggs",
+                genre: "edm"
             }
         ]
     },
@@ -360,7 +360,7 @@ const questions = [
                 genre: "country"
             },
             {
-                text: "Two random girls who just met at a festival",
+                text: "We just met!",
                 image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"brown wooden cabin infront of forest",
                 credit: "eulauretta",
@@ -384,32 +384,32 @@ const questions = [
     }
 ]
 
-const answers = [
-    {
-        combination: ["New York", "Pizza", "Traditional"],
-        text: "Blue Cheese",
-        image: "https://images.unsplash.com/photo-1452195100486-9cc805987862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&w=400&h=400&fit=fillmax",
-        alt: "Blue cheese"
-    },
-    {
-        combination: ["Austin", "Pasta", "Modern"],
-        text: "Cheddar",
-        image: "https://images.unsplash.com/photo-1618164435735-413d3b066c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        alt: "Cheddar cheese"
-    },
-    {
-        combination: ["Portland", "Sandwich", "Mountains"],
-        text: "Feta",
-        image: "https://images.unsplash.com/photo-1626957341926-98752fc2ba90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        alt: "Feta cheese"
-    },
-    {
-        combination: ["New Orleans", "Hamburger", "House"],
-        text: "Halloumi",
-        image: "https://images.unsplash.com/photo-1505281036624-fac2862357b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
-        alt: "Halloumi"
-    }
-]
+// const answers = [
+//     {
+//         combination: ["New York", "Pizza", "Traditional"],
+//         text: "Blue Cheese",
+//         image: "https://images.unsplash.com/photo-1452195100486-9cc805987862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&w=400&h=400&fit=fillmax",
+//         alt: "Blue cheese"
+//     },
+//     {
+//         combination: ["Austin", "Pasta", "Modern"],
+//         text: "Cheddar",
+//         image: "https://images.unsplash.com/photo-1618164435735-413d3b066c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+//         alt: "Cheddar cheese"
+//     },
+//     {
+//         combination: ["Portland", "Sandwich", "Mountains"],
+//         text: "Feta",
+//         image: "https://images.unsplash.com/photo-1626957341926-98752fc2ba90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+//         alt: "Feta cheese"
+//     },
+//     {
+//         combination: ["New Orleans", "Hamburger", "House"],
+//         text: "Halloumi",
+//         image: "https://images.unsplash.com/photo-1505281036624-fac2862357b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
+//         alt: "Halloumi"
+//     }
+// ]
 // need to have a default answer to compensate for lack of combination data
 
 const unansweredQuestions = []
@@ -443,9 +443,9 @@ const populateQuestions = () => {
             answerTitle.textContent = answer.text
 
             const answerInfo = document.createElement('p')
-            const imageLink = document.createElement('a')
-            imageLink.setAttribute('href', answer.image)
-            imageLink.textContent = answer.credit
+            // const imageLink = document.createElement('a')
+            // imageLink.setAttribute('href', answer.image)
+            // imageLink.textContent = answer.credit
             // const sourceLink = document.createElement('a')
             // sourceLink.textContent = 'Unsplash'
             // sourceLink.setAttribute('src', 'https://www.unsplash.com')
@@ -541,9 +541,12 @@ const showAnswer = () => {
     let everyNoiseUrl = `https://everynoise.com/engenremap-${result.genre.replaceAll(/\W/g, '')}.html`
     playlistEmbed.innerHTML = '<iframe style="border-radius:12px" src=' + playlistUrl + 'width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"/>'
     moreInfo.innerHTML = `Click <a href=${everyNoiseUrl} target=none>here</a> to learn more about ` + result.genre + "."
+    
     const remixText = document.createElement('h5')
-    remixText.textContent = "Don't like your rec? (The truth can be hard to hear) Hit remix to see another genre we think you'll like"
+    remixText.textContent = "Don't like your rec? (The truth can be hard to hear). Hit remix to see another genre we think you'll like"
     console.log('answerTitle', answerTitle.textContent)
+
+
 
     const handleButtonClick =  () => {
         result.genre = remixResult(maxKey, result.genre)
@@ -555,12 +558,26 @@ const showAnswer = () => {
         answerTitle.textContent = result.genre
     }
     remixButton.addEventListener('click', handleButtonClick)
+
+
+    const reloadButton = document.createElement('button')
+    reloadButton.classList.add('reload-button')
+    reloadButton.textContent = 'Start over'
+
+    const startOver = () => {
+        window.onclick = function() {
+            document.location = "";
+        }
+    }
+    reloadButton.addEventListener('click', startOver)
+
+
     /*
     answerImage.setAttribute('src', result.image)
     answerImage.setAttribute('alt', result.alt)
     */
 
-    answerBlock.append(answerIntro, answerTitle, answerApology, playlistEmbed, moreInfo, remixText, remixButton)
+    answerBlock.append(answerIntro, answerTitle, answerApology, playlistEmbed, moreInfo, remixText, remixButton, reloadButton)
 
     answerDisplay.append(answerBlock)
 
