@@ -99,11 +99,11 @@ const questions = [
         text: "Ok, but who have you actually listened to? (name five songs right now)",
         answers: [
             {
-                text: "Electric Light Orchestra",
-                image: "https://i.scdn.co/image/ab6761610000e5eb3f289b61b4d965ce54e31841",
-                alt:"The band Electric Light Orchestra's signature image of a UFO",
+                text: "Earl Sweatshirt",
+                image: "https://i.scdn.co/image/ab6761610000e5eb5e93db92ca7864585fbe5f28",
+                alt:"Singer Earl Sweatshirt",
                 credit: "Spotify",
-                genre: "rock"
+                genre: "rap"
             },
             {
                 text: "Dustin Lynch",
@@ -120,11 +120,11 @@ const questions = [
                 genre: "edm"
             },
             {
-                text: "Earl Sweatshirt",
-                image: "https://i.scdn.co/image/ab6761610000e5eb5e93db92ca7864585fbe5f28",
-                alt:"Singer Earl Sweatshirt",
+                text: "Electric Light Orchestra",
+                image: "https://i.scdn.co/image/ab6761610000e5eb3f289b61b4d965ce54e31841",
+                alt:"The band Electric Light Orchestra's signature image of a UFO",
                 credit: "Spotify",
-                genre: "rap"
+                genre: "rock"
             },
             {
                 text: "Japanese Breakfast",
@@ -154,13 +154,6 @@ const questions = [
                 genre: "edm"
             },
             {
-                text: "Come Over When You're Sober - Lil Peep",
-                image: "https://i.scdn.co/image/ab67616d0000b27322278aa84691381f3015d534",
-                alt:"Singer Lil Peep lying across a bed next to a pink sneaker and pink stuffed rabbit",
-                credit: "Spotify",
-                genre: "rap"
-            },
-            {
                 text: "SOUR - Olivia Rodrigo",
                 image: "https://i.scdn.co/image/ab67616d0000b273a91c10fe9472d9bd89802e5a",
                 alt:"Singer Olivia Rodrigo sticking her tongue out with stickers all over her face",
@@ -173,6 +166,13 @@ const questions = [
                 alt:"Purple filter over a black and white torso-up shot of a shirtless man looking down",
                 credit: "Spotify",
                 genre: "rock"
+            },
+            {
+                text: "Come Over When You're Sober - Lil Peep",
+                image: "https://i.scdn.co/image/ab67616d0000b27322278aa84691381f3015d534",
+                alt:"Singer Lil Peep lying across a bed next to a pink sneaker and pink stuffed rabbit",
+                credit: "Spotify",
+                genre: "rap"
             },
             {
                 text: "American Heartbreak - Zach Bryan",
@@ -209,7 +209,7 @@ const questions = [
                 genre: "rock"
             },
             {
-                text: "headache-inducing",
+                text: "a headache",
                 image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"trees beside white house",
                 credit: "Phil Hearing",
@@ -243,42 +243,42 @@ const questions = [
         text: "Wow... that was pretty brutal. Would hate to hear what your bestie has to say about your style. So we'll hear from you... what's you're go-to shoe?",
         answers: [
             {
-                text: "fila disruptors",
+                text: "Fila Disruptors",
                 image: "https://cdn.theatlantic.com/thumbor/eiecJzSaSSwQQPK0ygvlLCB1YSM=/0x396:2450x2846/1080x1080/media/img/2015/05/BOB_Cohen/original.jpg",
                 alt:"Cartoon drawing of a crowd at a concert from the perspective of the stage",
                 credit: "The Atlantic",
                 genre: "edm"
             },
             {
-                text: "vejas",
+                text: "Vejas",
                 image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"low angle view of building",
                 credit: "Brandon Giggs",
                 genre: "pop"
             },
             {
-                text: "af1",
+                text: "Air Force 1s",
                 image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"trees beside white house",
                 credit: "Phil Hearing",
                 genre: "rap"
             },
             {
-                text: "tevas",
+                text: "Tevas",
                 image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"brown wooden cabin infront of forest",
                 credit: "eulauretta",
                 genre: "rock"
             },
             {
-                text: "doc martens",
+                text: "Doc Martens",
                 image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"trees beside white house",
                 credit: "Phil Hearing",
                 genre: "indie"
             },
             {
-                text: "cowboy boots",
+                text: "Cowboy boots",
                 image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"brown wooden cabin infront of forest",
                 credit: "eulauretta",
@@ -291,11 +291,18 @@ const questions = [
         text: "Interesting... and which phrase would you be caught saying?",
         answers: [
             {
-                text: "Yeehaw!",
+                text: "Yee yee!",
                 image: "https://cdn.theatlantic.com/thumbor/eiecJzSaSSwQQPK0ygvlLCB1YSM=/0x396:2450x2846/1080x1080/media/img/2015/05/BOB_Cohen/original.jpg",
                 alt:"Cartoon drawing of a crowd at a concert from the perspective of the stage",
                 credit: "The Atlantic",
                 genre: "country"
+            },
+            {
+                text: "It's from TikTok.",
+                image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"brown wooden cabin infront of forest",
+                credit: "eulauretta",
+                genre: "pop"
             },
             {
                 text: "No cap",
@@ -305,28 +312,21 @@ const questions = [
                 genre: "rap"
             },
             {
-                text: "Bro, did you know Tame Impala is just one guy?",
-                image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-                alt:"trees beside white house",
-                credit: "Phil Hearing",
-                genre: "indie"
-            },
-            {
-                text: "Are you old enough to remember landlines?",
+                text: "When I was your age...",
                 image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"trees beside white house",
                 credit: "Phil Hearing",
                 genre: "rock"
             },
             {
-                text: "I heard it on TikTok first.",
-                image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-                alt:"brown wooden cabin infront of forest",
-                credit: "eulauretta",
-                genre: "pop"
+                text: "Tame Impala is just one dude",
+                image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"trees beside white house",
+                credit: "Phil Hearing",
+                genre: "indie"
             },
             {
-                text: "Have you met my friend Molly?",
+                text: "Can I get a piece of gum?",
                 image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"low angle view of building",
                 credit: "Brandon Giggs",
@@ -339,42 +339,42 @@ const questions = [
         text: "We've just about got you down... last question. Who are your bestie goals?",
         answers: [
             {
-                text: "Mick Jagger and David Bowie",
+                text: "Mick Jagger & David Bowie",
                 image: "https://cdn.theatlantic.com/thumbor/eiecJzSaSSwQQPK0ygvlLCB1YSM=/0x396:2450x2846/1080x1080/media/img/2015/05/BOB_Cohen/original.jpg",
                 alt:"Cartoon drawing of a crowd at a concert from the perspective of the stage",
                 credit: "The Atlantic",
                 genre: "rock"
             },
             {
-                text: "Phoebe Bridgers, Lucy Dacus and Julien Baker",
-                image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-                alt:"low angle view of building",
-                credit: "Brandon Giggs",
-                genre: "indie"
-            },
-            {
-                text: "Dolly Parton and Kenny Rogers",
-                image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
-                alt:"trees beside white house",
-                credit: "Phil Hearing",
-                genre: "country"
-            },
-            {
-                text: "We just met!",
+                text: "We met 20 minutes ago!",
                 image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"brown wooden cabin infront of forest",
                 credit: "eulauretta",
                 genre: "edm"
             },
             {
-                text: "Bladee and Yung Lean",
+                text: "Dolly Parton & Kenny Rogers",
+                image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"trees beside white house",
+                credit: "Phil Hearing",
+                genre: "country"
+            },
+            {
+                text: "Bladee & Yung Lean",
                 image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"trees beside white house",
                 credit: "Phil Hearing",
                 genre: "rap"
             },
             {
-                text: "Doja Cat and Saweetie",
+                text: "Phoebe Bridgers & Paul Mescal 🥲",
+                image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                alt:"low angle view of building",
+                credit: "Brandon Giggs",
+                genre: "indie"
+            },
+            {
+                text: "Doja Cat & Saweetie",
                 image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
                 alt:"brown wooden cabin infront of forest",
                 credit: "eulauretta",
