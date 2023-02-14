@@ -137,7 +137,7 @@ const questions = [
                 text: "I don't know any of these",
                 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Emblem-question-yellow.svg/240px-Emblem-question-yellow.svg.png",
                 alt:"A white question mark inside of a yellow circle with a dropshadow",
-                credit: "Creative Commons",
+                credit: "Wikimedia Commons",
                 genre: "pop"
             }
         ]
@@ -198,42 +198,42 @@ const questions = [
                 text: "~alternative~",
                 image: "https://img.freepik.com/free-vector/esoteric-element-pack-concept_23-2148570862.jpg?w=996&t=st=1676340761~exp=1676341361~hmac=761ed028273c13d9bfa5b2adb56896436d47a414a081924afc681e09cc9f81b9",
                 alt:"Cartoon drawing of a crowd at a concert from the perspective of the stage",
-                credit: "Image by Freepik",
+                credit: "Freepik",
                 genre: "indie"
             },
             {
                 text: "classic",
                 image: "https://img.freepik.com/free-photo/rock-band-guitarist-performing-repetition-recording-studio_53876-133522.jpg?w=2000&t=st=1676343804~exp=1676344404~hmac=5e84028bcbedaa9dd1cde853934e3cf7618027c710abd16d36f63ddc2d4ce1af",
                 alt:"Image by Freepik",
-                credit: "Image by rawpixel.com on Freepik",
+                credit: "rawpixel.com on Freepik",
                 genre: "rock"
             },
             {
                 text: "a headache",
                 image: "https://img.freepik.com/free-photo/illustration-cosmic-background-with-orange-neon-laser-lights_181624-19567.jpg?w=2000&t=st=1676341923~exp=1676342523~hmac=af32c510f6b491c03fe3ee035575dbf93950ae2e4bcf5afef6f7a4d0bb70fc65",
                 alt:"trees beside white house",
-                credit: "Image by wirestock on Freepik",
+                credit: "wirestock on Freepik",
                 genre: "edm"
             },
             {
                 text: "basic",
                 image: "https://img.freepik.com/free-photo/young-beautiful-stylish-hipster-woman-pink-leather-jacket_285396-3268.jpg?w=2000&t=st=1676342028~exp=1676342628~hmac=ff5f78df63a2caba7ddf0a4a0abeab474ad4600a86700ed6c93cbc822df3d5ea",
                 alt:"brown wooden cabin infront of forest",
-                credit: "Image by marymarkevich on Freepik",
+                credit: "marymarkevich on Freepik",
                 genre: "pop"
             },
             {
                 text: "valid",
                 image: "https://img.freepik.com/free-photo/american-dollar-bills_1101-1.jpg?1&w=996&t=st=1676344512~exp=1676345112~hmac=dbf37a864da71af184a70410dea1ef50c5c9c2db9b55f3b83ee133433bc10e0f",
                 alt:"",
-                credit: "Image by kstudio on Freepik",
+                credit: "kstudio on Freepik",
                 genre: "rap"
             },
             {
                 text: "bad",
                 image: "https://img.freepik.com/free-photo/beautiful-shot-cornfield-with-blue-sky_181624-20783.jpg?w=2000&t=st=1676342713~exp=1676343313~hmac=83690dad6411692ecba264096d07e90b84d4d4bcdb32505bcebc4a720c7aac02",
                 alt:"brown wooden cabin infront of forest",
-                credit: "Image by wirestock on Freepik",
+                credit: "wirestock on Freepik",
                 genre: "country"
             }
         ]
@@ -266,14 +266,14 @@ const questions = [
                 text: "Cowboy boots",
                 image: "https://img.freepik.com/free-photo/cowboy-inspiration-with-boots-chair_23-2149484732.jpg?w=740&t=st=1676343375~exp=1676343975~hmac=960c43d904989a8edd2030a666631ced636b481b69d55d950493a63bde80ee21",
                 alt:"brown wooden cabin infront of forest",
-                credit: "Image by Freepik",
+                credit: "Freepik",
                 genre: "country"
             },
             {
                 text: "Air Force 1s",
                 image: "https://img.freepik.com/free-photo/white-high-top-sneakers-unisex-footwear-fashion_53876-106036.jpg?w=2000&t=st=1676343007~exp=1676343607~hmac=9d5c185ba5c274a11f369326baf2dc750466b68d4689a19d622bb63d43513aab",
                 alt:"trees beside white house",
-                credit: "Image by rawpixel.com on Freepik",
+                credit: "rawpixel.com on Freepik",
                 genre: "rap"
             },
             {
@@ -293,14 +293,14 @@ const questions = [
                 text: "Yee yee!",
                 image: "https://img.freepik.com/free-vector/flat-design-cowboy-silhouette-illustration_23-2149480874.jpg?w=996&t=st=1676342407~exp=1676343007~hmac=631e737e12ce4eec5989bb9c1c3af65d4efd336a09f3b8eb204b03ff98a40994",
                 alt:"Cartoon drawing of a crowd at a concert from the perspective of the stage",
-                credit: "Image by Freepik",
+                credit: "Freepik",
                 genre: "country"
             },
             {
                 text: "AH 😛",
                 image: "https://img.freepik.com/free-photo/young-woman-with-dyed-hair-taking-selfie_23-2149488609.jpg?w=2000&t=st=1676343539~exp=1676344139~hmac=a129362a240ee9e90579f394b08f85ccfa08e6860b4e49313b31a550801a4950",
                 alt:"brown wooden cabin infront of forest",
-                credit: "Image by Freepik",
+                credit: "Freepik",
                 genre: "pop"
             },
             {
@@ -321,27 +321,27 @@ const questions = [
                 text: "Tame Impala is just one dude",
                 image: "https://img.freepik.com/free-vector/psychedelic-optical-illusion-background_23-2148554961.jpg?w=2000&t=st=1676344271~exp=1676344871~hmac=73e4e207f20de924303aa5ec5e69ca9e7a303e401bac20bf25bbefdb746e8558",
                 alt:"trees beside white house",
-                credit: "Image by Freepik",
+                credit: "Freepik",
                 genre: "indie"
             },
             {
                 text: "Can I get a piece of gum?",
                 image: "https://img.freepik.com/free-photo/person-eating-sweet-candy-desert_23-2149675162.jpg?w=2000&t=st=1676344328~exp=1676344928~hmac=2b13713d8694f2bb6ded1f92937ffb4303d1bfbb771fd4bba06319d822324df4",
                 alt:"low angle view of building",
-                credit: "Image by Freepik",
+                credit: "Freepik",
                 genre: "edm"
             }
         ]
     },
     {
         id: 6,
-        text: "We've just about got you down... last question. Who are your bestie goals?",
+        text: "We've just about got you down... last question. What's your meme of choice?",
         answers: [
             {
-                text: "Mick Jagger & David Bowie",
-                image: "https://cdn.theatlantic.com/thumbor/eiecJzSaSSwQQPK0ygvlLCB1YSM=/0x396:2450x2846/1080x1080/media/img/2015/05/BOB_Cohen/original.jpg",
+                text: "Anti-Brit",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Bottle_of_Water_meme.png/640px-Bottle_of_Water_meme.png",
                 alt:"Cartoon drawing of a crowd at a concert from the perspective of the stage",
-                credit: "The Atlantic",
+                credit: "Wikimedia Commons",
                 genre: "rock"
             },
             {
@@ -352,64 +352,36 @@ const questions = [
                 genre: "edm"
             },
             {
-                text: "Dolly Parton & Kenny Rogers",
-                image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                text: "He gets me",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Farmer_meme_with_apostrophe.jpg/640px-Farmer_meme_with_apostrophe.jpg",
                 alt:"trees beside white house",
-                credit: "Phil Hearing",
+                credit: "Wikimedia Commons",
                 genre: "country"
             },
             {
-                text: "Bladee & Yung Lean",
-                image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                text: "Deep fried",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/WikiMeme_Dank.jpg/1278px-WikiMeme_Dank.jpg?20200928003901",
                 alt:"trees beside white house",
-                credit: "Phil Hearing",
+                credit: "Wikimedia Commons",
                 genre: "rap"
             },
             {
-                text: "Phoebe Bridgers & Paul Mescal 🥲",
-                image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                text: "Wojak",
+                image: "https://openclipart.org/download/239209/1-2016011842-2400px-outline-notext.svg",
                 alt:"low angle view of building",
-                credit: "Brandon Giggs",
+                credit: "rejon on openclipart",
                 genre: "indie"
             },
             {
-                text: "Doja Cat & Saweetie",
-                image: "https://images.unsplash.com/photo-1506974210756-8e1b8985d348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+                text: "much wow",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Origin%C3%A1ln%C3%AD_V%C5%A0CHT_Stolen_Memes.png/640px-Origin%C3%A1ln%C3%AD_V%C5%A0CHT_Stolen_Memes.png",
                 alt:"brown wooden cabin infront of forest",
-                credit: "eulauretta",
+                credit: "Wikimedia Commons",
                 genre: "pop"
             }
         ]
     }
 ]
-
-// const answers = [
-//     {
-//         combination: ["New York", "Pizza", "Traditional"],
-//         text: "Blue Cheese",
-//         image: "https://images.unsplash.com/photo-1452195100486-9cc805987862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&w=400&h=400&fit=fillmax",
-//         alt: "Blue cheese"
-//     },
-//     {
-//         combination: ["Austin", "Pasta", "Modern"],
-//         text: "Cheddar",
-//         image: "https://images.unsplash.com/photo-1618164435735-413d3b066c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-//         alt: "Cheddar cheese"
-//     },
-//     {
-//         combination: ["Portland", "Sandwich", "Mountains"],
-//         text: "Feta",
-//         image: "https://images.unsplash.com/photo-1626957341926-98752fc2ba90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-//         alt: "Feta cheese"
-//     },
-//     {
-//         combination: ["New Orleans", "Hamburger", "House"],
-//         text: "Halloumi",
-//         image: "https://images.unsplash.com/photo-1505281036624-fac2862357b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
-//         alt: "Halloumi"
-//     }
-// ]
-// need to have a default answer to compensate for lack of combination data
 
 const unansweredQuestions = []
 const chosenAnswers = []
@@ -452,15 +424,17 @@ const populateQuestions = () => {
                 answerTitle.textContent = answer.text
 
             const answerInfo = document.createElement('p')
-            // const imageLink = document.createElement('a')
-            // imageLink.setAttribute('href', answer.image)
-            // imageLink.textContent = answer.credit
-            // const sourceLink = document.createElement('a')
-            // sourceLink.textContent = 'Unsplash'
-            // sourceLink.setAttribute('src', 'https://www.unsplash.com')
-            // answerInfo.append(imageLink, ' to ', sourceLink)
+            const imageLink = document.createElement('a')
+            imageLink.setAttribute('href', answer.image)
+            imageLink.textContent = answer.credit
+            // const sourceLink = document.createElement('a') 
+            // sourceLink.textContent = 'Freepik'
+            // sourceLink.setAttribute('src', 'https://www.freepik.com')
+            // answerInfo.append(imageLink, ' by ', sourceLink)
+            //     answerInfo.classList.add('by')
 
-            answerBlock.append(answerImage, answerTitle, answerInfo)
+            answerBlock.append(answerImage, answerTitle, imageLink)
+            // answerInfo
 
             answersBlock.append(answerBlock)
         })
@@ -581,10 +555,8 @@ const showAnswer = () => {
     reloadButton.addEventListener('click', startOver)
 
 
-    /*
     answerImage.setAttribute('src', result.image)
     answerImage.setAttribute('alt', result.alt)
-    */
 
     answerBlock.append(answerIntro, answerTitle, answerApology, playlistEmbed, moreInfo, remixText, remixButton, reloadButton)
 

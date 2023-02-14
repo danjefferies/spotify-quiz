@@ -107,6 +107,17 @@
         width: 100%;
     }
 
+    a {
+        font-size: 0.5em;
+        color: #949494;
+    }
+
+    .by{
+        font-size: 0.5em;
+        color: #949494;
+    }
+
+
     /* BUTTONS */
     button{
         padding: 10px 20px;
