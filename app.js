@@ -433,7 +433,7 @@ const populateQuestions = () => {
         question.answers.forEach(answer => {
             const answerBlock = document.createElement('div')
                 answerBlock.classList.add('answer-block')
-                answerBlock.addEventListener('click', () => handleClick(question.id, answer.genre))
+                answerBlock.addEventListener('click', () => handleClick(question.id, answer.genre, answer.text))
 
         // let answerImage = () => {
         //         if (questions.id == 2) 
@@ -471,18 +471,19 @@ const populateQuestions = () => {
 }
 populateQuestions()
 
-const handleClick = (questionId, chosenAnswer) => {
-    if (unansweredQuestions.includes(questionId))
-    chosenAnswers.push(chosenAnswer)
+const handleClick = (questionId, chosenAnswer, chosenAnswerText) => {
+    if (unansweredQuestions.includes(questionId)) {
+        chosenAnswers.push(chosenAnswer)
+    }
+    else {
+        chosenAnswers.splice(questionId, 1, chosenAnswer)
+    }
     const itemToRemove = unansweredQuestions.indexOf(questionId)
-
     if (itemToRemove > -1) {
         unansweredQuestions.splice(itemToRemove, 1)
     }
-    console.log(chosenAnswers)
-    console.log(unansweredQuestions)
 
-    disableQuestionBlock(questionId, chosenAnswer)
+    disableQuestionBlock(questionId, chosenAnswerText)
     const lowestQuestionId = Math.min(...unansweredQuestions)
     location.href = '#' + lowestQuestionId
 
@@ -490,6 +491,8 @@ const handleClick = (questionId, chosenAnswer) => {
         location.href = '#answer'
         showAnswer()
     }
+    console.log(chosenAnswers)
+    console.log(unansweredQuestions)
 }
 
 const remixResult = (genre, currentResult) => {
@@ -538,21 +541,21 @@ const showAnswer = () => {
     remixButton.classList.add('remix-button')
     remixButton.textContent = 'Remix'
 
-    const answerIntro = document.createElement('h2')
+    const answerIntro = document.createElement('h5')
     answerIntro.textContent = 'The results are in! The super-cool ultra-niche Spotify genre you NEED to add to your playlists is...'
-    const answerTitle = document.createElement('h3')
+    const answerTitle = document.createElement('h4')
     answerTitle.textContent = result.genre
-    const answerApology = document.createElement('h4')
+    const answerApology = document.createElement('h6')
     answerApology.textContent = '(sorry)'
-    const moreInfo = document.createElement('h5')
+    const moreInfo = document.createElement('h6')
     const playlistEmbed = document.createElement('div')
     let playlistUrl = `https://open.spotify.com/embed/playlist/${result.playlist}?utm_source=generator`
     let everyNoiseUrl = `https://everynoise.com/engenremap-${result.genre.replaceAll(/\W/g, '')}.html`
     playlistEmbed.innerHTML = '<iframe style="border-radius:12px" src=' + playlistUrl + 'width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"/>'
     moreInfo.innerHTML = `Click <a href=${everyNoiseUrl} target=none>here</a> to learn more about ` + result.genre + "."
     
-    const remixText = document.createElement('h5')
-    remixText.textContent = "Don't like your rec? (The truth can be hard to hear). Hit remix to see another genre we think you'll like"
+    const remixText = document.createElement('h6')
+    remixText.innerHTML = "<br/><br/>Don't like your rec? (The truth can be hard to hear). Hit remix to see another genre we think you'll like."
     console.log('answerTitle', answerTitle.textContent)
 
 
@@ -601,6 +604,9 @@ const disableQuestionBlock = (questionId, chosenAnswer) => {
     Array.from(currentQuestionBlock.children).forEach(block => {
         if (block.children.item(1).innerText !== chosenAnswer) {
             block.style.opacity = "50%"
+        }
+        if (block.children.item(1).innerText === chosenAnswer) {
+            block.style.opacity = "100%"
         }
     })
 }
