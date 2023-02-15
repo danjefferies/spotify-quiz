@@ -414,8 +414,8 @@ const populateQuestions = () => {
             const answerTitle = document.createElement('h3')
                 answerTitle.textContent = answer.text
 
-            const answerInfo = document.createElement('p')
             const imageLink = document.createElement('a')
+            imageLink.classList.add('credit-link')
             imageLink.setAttribute('href', answer.image)
             imageLink.textContent = answer.credit
 

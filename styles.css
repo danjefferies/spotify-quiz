@@ -126,6 +126,10 @@
     }
 
     a {
+        color: #949494;
+    }
+
+    .credit-link {
         font-size: 0.5em;
         color: #949494;
     }
