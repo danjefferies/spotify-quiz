@@ -407,15 +407,6 @@ const populateQuestions = () => {
                 answerBlock.classList.add('answer-block')
                 answerBlock.addEventListener('click', () => handleClick(question.id, answer.genre, answer.text))
 
-        // let answerImage = () => {
-        //         if (questions.id == 2) 
-        //         { document.createElement('h3');
-        //      } else {
-        //     document.createElement('img')
-        // }
-
-        //     }
-
             const answerImage = document.createElement('img')
                 answerImage.setAttribute('src', answer.image)
                 answerImage.setAttribute('alt', answer.alt)
@@ -427,14 +418,8 @@ const populateQuestions = () => {
             const imageLink = document.createElement('a')
             imageLink.setAttribute('href', answer.image)
             imageLink.textContent = answer.credit
-            // const sourceLink = document.createElement('a') 
-            // sourceLink.textContent = 'Freepik'
-            // sourceLink.setAttribute('src', 'https://www.freepik.com')
-            // answerInfo.append(imageLink, ' by ', sourceLink)
-            //     answerInfo.classList.add('by')
 
             answerBlock.append(answerImage, answerTitle, imageLink)
-            // answerInfo
 
             answersBlock.append(answerBlock)
         })
@@ -458,8 +443,9 @@ const handleClick = (questionId, chosenAnswer, chosenAnswerText) => {
     }
 
     disableQuestionBlock(questionId, chosenAnswerText)
-    const lowestQuestionId = Math.min(...unansweredQuestions)
-    location.href = '#' + lowestQuestionId
+    //const lowestQuestionId = Math.min(...unansweredQuestions)
+    const nextQuestionId = questionId + 1
+    location.href = '#' + nextQuestionId
 
     if (!unansweredQuestions.length) {
         location.href = '#answer'
@@ -556,10 +542,6 @@ const showAnswer = () => {
         }
     }
     reloadButton.addEventListener('click', startOver)
-
-
-    answerImage.setAttribute('src', result.image)
-    answerImage.setAttribute('alt', result.alt)
 
     answerBlock.append(answerIntro, answerTitle, answerApology, playlistEmbed, moreInfo, remixText, remixButton, reloadButton)
 
