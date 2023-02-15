@@ -519,6 +519,8 @@ const showAnswer = () => {
     let everyNoiseUrl = `https://everynoise.com/engenremap-${result.genre.replaceAll(/\W/g, '')}.html`
     playlistEmbed.innerHTML = '<iframe style="border-radius:12px" src=' + playlistUrl + 'width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"/>'
     moreInfo.innerHTML = `Click <a href=${everyNoiseUrl} target=none>here</a> to learn more about ` + result.genre + "."
+    const byline = document.createElement('p')
+    byline.innerHTML = '<br/>Quiz created by Danice Jefferies and <a href="https://annettastogniew.wordpress.com/">Annetta Stogniew</a> using the <a href="https://developer.spotify.com/documentation/web-api/">Spotify API</a> and <a href="https://everynoise.com/">Every Noise at Once</a>.'
     
     const remixText = document.createElement('h6')
     remixText.innerHTML = "<br/><br/>Don't like your rec? (The truth can be hard to hear). Hit remix to see another genre we think you'll like."
@@ -549,7 +551,7 @@ const showAnswer = () => {
     }
     reloadButton.addEventListener('click', startOver)
 
-    answerBlock.append(answerIntro, answerTitle, answerApology, playlistEmbed, moreInfo, remixText, remixButton, reloadButton)
+    answerBlock.append(answerIntro, answerTitle, answerApology, playlistEmbed, moreInfo, remixText, remixButton, reloadButton, byline)
 
     answerDisplay.append(answerBlock)
 
