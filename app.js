@@ -58,9 +58,9 @@ const questions = [
                genre: "pop"
            },
            {
-               text: "Kendrick Lamar",
-               image: "https://i.scdn.co/image/ab6761610000e5eb437b9e2a82505b3d93ff1022",
-               alt:"Singer Kendrick Lamar",
+               text: "Drake",
+               image: "https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9",
+               alt:"Singer Drake",
                credit: "Spotify",
                genre: "rap"
            },
