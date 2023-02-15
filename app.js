@@ -449,6 +449,7 @@ const handleClick = (questionId, chosenAnswer, chosenAnswerText) => {
 
     if (!unansweredQuestions.length) {
         location.href = '#answer'
+        hideWarning()
         showAnswer()
     }
     console.log(chosenAnswers)
@@ -462,6 +463,11 @@ const remixResult = (genre, currentResult) => {
     }
     console.log(newResult)
     return newResult
+}
+
+const hideWarning = () => {
+    const warning = document.getElementById('warning-message')
+    warning.style.visibility = 'hidden'
 }
 
 const showAnswer = () => {
