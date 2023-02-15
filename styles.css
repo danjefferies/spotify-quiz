@@ -125,13 +125,27 @@
         width: 100%;
     }
 
-    a {
-        color: #949494;
+    a:link {
+        text-decoration: none;
+        color: #3cdfff;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: #842bd7;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a:active {
+        text-decoration: none;
     }
 
     .credit-link {
         font-size: 0.5em;
-        color: #949494;
+        color: #949494 !important;
     }
 
     .by{
