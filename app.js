@@ -240,7 +240,7 @@ const questions = [
     },
     {
         id: 4,
-        text: "Wow... that was pretty brutal. Would hate to hear what your bestie has to say about your style. So we'll hear from you... what's you're go-to shoe?",
+        text: "Wow... that was pretty brutal. Would hate to hear what your bestie has to say about your style. So we'll hear from you... what's your go-to shoe?",
         answers: [
             {
                 text: "Fila Disruptors",
