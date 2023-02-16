@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Shrikhand');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700&display=swap');
 
 /* COLOR PALETTE
     #E270C9 - light purple with pink hue
@@ -17,7 +16,6 @@
         display: flex;
         justify-content: center;
         font-size: 15px;
-        /* line-height: 2.5em; */
         padding: 0.5em;
         background-color:#90E666;
         margin: 0 0.5em 0 0.5em;
@@ -30,7 +28,6 @@
     #banner {
         padding: 3vh 10%;
         margin-bottom: 3vh;
-        /* this might need to be media queried for diff screen sizes */
     }
 
     section {
@@ -79,7 +76,6 @@
         display: flex;
         justify-content: center;
         align-content: center;
-        /* padding: 0 0.2em 0 0.2em; */
     }
 
     /* ANSWER BLOCKS */
@@ -92,7 +88,6 @@
 
     .answer-block{
         width: 32%;
-        /* height: 16%; */
         border-radius: 8px;
         box-shadow: rgba(0,0,0, 0.07) 0 0 0 1px;
         background-color: white;
