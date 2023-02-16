@@ -6,7 +6,7 @@ const answerDisplay = document.querySelector('#answer')
 const recs = {
     'pop': ['post-teen pop', 'neo mellow', 'indie poptimism', 'dream pop', 'alt-z'],
     'country': ['country road', 'nl folk', 'mellow gold', 'redneck', 'red dirt'],
-    'dance': ['brostep', 'destroy techno', 'bubble trance', 'drift phonk', 're:techno'],
+    'edm': ['brostep', 'destroy techno', 'bubble trance', 'drift phonk', 're:techno'],
     'indie': ['small room',  'lo-fi indie', 'shoegaze', 'neo-pagan', 'baroque pop'],
     'rap': ['conscious hip hop', 'experimental hip hop', 'crunk', 'drain', 'dark trap'],
     'rock': ['jangle pop', 'freakbeat', 'irish rebel song', 'anti-folk', 'souldies']
@@ -477,7 +477,7 @@ const showAnswer = () => {
     const answerCounts = {
         'pop': 0,
         'country': 0,
-        'dance': 0,
+        'edm': 0,
         'indie': 0,
         'rap': 0,
         'rock': 0
@@ -501,6 +501,10 @@ const showAnswer = () => {
         'genre': resultGenre,
         'playlist': playlists[resultGenre]
     };
+
+    console.log('answerCounts', answerCounts)
+
+    console.log('bigGenre', maxKey)
 
     const answerBlock = document.createElement('div')
     answerBlock.classList.add('result-block')
