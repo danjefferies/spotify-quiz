@@ -259,7 +259,8 @@ const questions = [
             {
                 text: "Tevas",
                 image: "https://live.staticflickr.com/65535/48764503631_aedd6b3b19_b.jpg",
-                credit: "Tevas brand sandals worn with socks underneath",
+                alt: "Tevas brand sandals worn with socks underneath",
+                credit: "Static Flickr",
                 genre: "rock"
             },
             {
