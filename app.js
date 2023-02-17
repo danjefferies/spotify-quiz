@@ -502,10 +502,6 @@ const showAnswer = () => {
         'playlist': playlists[resultGenre]
     };
 
-    console.log('answerCounts', answerCounts)
-
-    console.log('bigGenre', maxKey)
-
     const answerBlock = document.createElement('div')
     answerBlock.classList.add('result-block')
     const remixButton = document.createElement('button')
